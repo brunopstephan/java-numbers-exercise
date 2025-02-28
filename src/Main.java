@@ -22,10 +22,10 @@ public class Main {
 
         Integer[] numbers = numbersMutation.getNumbers();
 
-        String text = "";
+        StringBuilder text = new StringBuilder();
 
-        for (int i = 0; i < numbers.length; i++) {
-            text += numbers[i] + " ";
+        for (Integer number : numbers) {
+            text.append(number).append(" ");
         }
 
         System.out.println("Números: " + text);

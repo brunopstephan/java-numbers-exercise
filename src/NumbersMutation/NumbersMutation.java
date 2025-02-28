@@ -14,8 +14,8 @@ public class NumbersMutation {
     private Integer getSum() {
         Integer sum = 0;
 
-        for (int i = 0; i < this.numbers.length; i++) {
-            sum += numbers[i];
+        for (Integer number : this.numbers) {
+            sum += number;
         }
 
         return sum;
@@ -30,10 +30,10 @@ public class NumbersMutation {
     public Integer getSmallest() {
         Integer smallest = this.numbers[0];
 
-        for (int i = 0; i < this.numbers.length; i++) {
-            if(this.numbers[i] > smallest) continue;
+        for (Integer number : this.numbers) {
+            if (number > smallest) continue;
 
-            smallest = numbers[i];
+            smallest = number;
         }
 
         return smallest;
@@ -42,10 +42,10 @@ public class NumbersMutation {
     public Integer getBiggest() {
         Integer biggest = this.numbers[0];
 
-        for (int i = 0; i < this.numbers.length; i++) {
-            if(this.numbers[i] < biggest) continue;
+        for (Integer number : this.numbers) {
+            if (number < biggest) continue;
 
-            biggest = numbers[i];
+            biggest = number;
         }
 
         return biggest;
