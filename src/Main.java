@@ -9,9 +9,9 @@ public class Main {
 
         Integer[] inputNumbers = new Integer[10];
 
-        System.out.println("Digite 10 números inteiros:");
+        System.out.println("Enter 10 integer numbers:");
         for (int i = 0; i < 10; i++) {
-            System.out.print("Número " + (i + 1) + ": ");
+            System.out.print("Number " + (i + 1) + ": ");
             inputNumbers[i] = scanner.nextInt();
 
         }
@@ -28,19 +28,19 @@ public class Main {
             text.append(number).append(" ");
         }
 
-        System.out.println("Números: " + text);
+        System.out.println("Number's list: " + text);
 
         Float average = numbersMutation.getAverage();
 
-        System.out.println("Média: " + average);
+        System.out.println("Average: " + average);
 
         Integer smallest = numbersMutation.getSmallest();
 
-        System.out.println("Menor número: " + smallest);
+        System.out.println("Smallest number: " + smallest);
 
         Integer biggest = numbersMutation.getBiggest();
 
-        System.out.println("Maior número: " + biggest);
+        System.out.println("Biggest number: " + biggest);
 
     }
 }
